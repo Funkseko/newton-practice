@@ -21,7 +21,7 @@ def optimize(k, func, h = 1e-6):
     k1 = 1
     k0 = 0
     count = 0
-    while abs(k1 - k0) > 0.001:
+    while abs(k1 - k0) > 0.00001:
         """ Approximation algorithm"""
         k0 = k
         k1 = k - d1(k, func) / d2(k, func)
